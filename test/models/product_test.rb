@@ -69,11 +69,6 @@ class ProductTest < ActiveSupport::TestCase
                           description: "yyy",
                           price: 1,
                           image_url: "fred.gif")
-    begin
-      product.save!
-    rescue Exception => e
-      print e.message()
-    end
     assert !product.save
     #assert_equal "is too short (minimum is 10 characters)", product.errors[:title].join('; ')
     assert_equal I18n.translate('errors.messages.too_short', count: 10),
