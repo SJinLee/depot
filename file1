@@ -1,0 +1,5 @@
+ LoadModule passenger_module /away/.rvm/gems/ruby-1.9.3-p547/gems/passenger-4.0.52/buildout/apache2/mod_passenger.so
+    <IfModule mod_passenger.c>
+      PassengerRoot /away/.rvm/gems/ruby-1.9.3-p547/gems/passenger-4.0.52
+      PassengerDefaultRuby /away/.rvm/gems/ruby-1.9.3-p547/wrappers/ruby
+    </IfModule>
